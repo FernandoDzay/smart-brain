@@ -28,7 +28,7 @@ class Register extends Component{
 		const { onRouteChange, loadUser } = this.props;
 		
 		if(name.length && email.length && password.length){
-			fetch('http://localhost:3001/register/',{
+			fetch('https://protected-peak-79145.herokuapp.com/register/',{
 			method: 'post',
 			headers: {'Content-Type': 'application/json'},
 			body: JSON.stringify({name: name, email: email, password: password})

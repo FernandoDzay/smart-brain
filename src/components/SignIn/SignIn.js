@@ -22,7 +22,7 @@ class SignIn extends Component{
 		const { email, password } = this.state;
 		const { onRouteChange, loadUser } = this.props;
 
-		fetch('http://localhost:3001/signin/',{
+		fetch('https://protected-peak-79145.herokuapp.com/signin/',{
 			method: 'post',
 			headers: {'Content-Type': 'application/json'},
 			body: JSON.stringify({email: email, password: password})
